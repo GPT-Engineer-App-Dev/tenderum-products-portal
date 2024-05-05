@@ -19,12 +19,32 @@ const Index = () => {
         <Stack direction={{ base: "column", md: "row" }} spacing={10}>
           <Box flex="1">
             <Heading as="h3" size="lg">Tenderisation Timer</Heading>
-            <Text mt={2}>Optimize your cooking with our state-of-the-art Tenderisation Timer. Perfect for achieving the ideal texture in every dish.</Text>
-            <List spacing={3} mt={4}>
-              <ListItem><Text as="span" fontWeight="bold">Accuracy:</Text> High precision timing</ListItem>
-              <ListItem><Text as="span" fontWeight="bold">User Friendly:</Text> Easy-to-use interface</ListItem>
-              <ListItem><Text as="span" fontWeight="bold">Durability:</Text> Built to last</ListItem>
-            </List>
+            <Text mt={2}>
+              Meat needs to hang to become tender and flavorful, but it can be difficult to know how long. With a Tenderisation Timer, you always have full control over the tenderization process, and you can confidently hang your meat until it achieves optimal tenderness and flavor. Regardless of temperature variations, the Tenderisation Timer calculates how far the tenderization has progressed and estimates the number of days remaining. Tested in "Jaktjournalen" with good ratings!
+            </Text>
+            <Text mt={4}>
+              The timers are powered by standard 1.5V AAA (LR03) batteries. With normal use, they last for many years.
+            </Text>
+            <Heading as="h4" size="md" mt={6}>Facts</Heading>
+            <Text mt={2}>
+              Tenderization of meat is a chemical process where connective tissue and other proteins in the meat are broken down by natural enzymes. This breakdown makes the meat more tender and develops the flavor. Simplified, a Tenderisation Timer consists of a small computer with a sensor that measures temperature every 21 seconds. The computer continuously calculates the tenderization and the estimated number of remaining days until the tenderization is complete, displaying this information on the displays.
+            </Text>
+            <Text mt={4}>
+              The tenderization calculation is primarily based on the concept of degree days, where degree days are calculated as the average temperature multiplied by the number of days. If the temperature is too low, the Tenderisation Timer warns by displaying a snowflake icon. The Tenderisation Timer can be used for both wild game shot and for livestock that has been slaughtered, and for all types of animals that need to hang.
+            </Text>
+            <Text mt={4}>
+              The calculation of the number of remaining days is based on the average daily temperature since the Tenderisation Timer was started. The Tenderisation Timer continues to calculate the tenderization up to 200% and then automatically shuts off in anticipation of the next tenderization opportunity.
+            </Text>
+            <Text mt={4}>
+              This method can be used both when you are forced to butcher before the meat is fully tenderized, and for meat that is suitable for tenderizing in butchered form. The same Tenderisation Timer can be used to measure the tenderization of several animals as long as they have been shot or slaughtered at the same time and hang in the same space.
+            </Text>
+            <Heading as="h4" size="md" mt={6}>Store Review</Heading>
+            <Text mt={2}>
+              After an animal has been shot or slaughtered, it should be dressed to prevent intestinal bacteria from affecting the meat. The body can then be hung with or without skin. The hanging of the animal should take place in a space that meets a number of requirements. No animals or insects should be able to access the meat, which is most easily solved by letting the animal hang in a game bag.
+            </Text>
+            <Text mt={4}>
+              Am I guaranteed a good result if I use a Tenderisation Timer? No, even though the Tenderisation Timer provides very valuable information about how far the tenderization has progressed, you should also use smell and sight to assess the meat quality.
+            </Text>
           </Box>
           <Box flex="1">
             <Heading as="h3" size="lg">Game Fridge Kits</Heading>
