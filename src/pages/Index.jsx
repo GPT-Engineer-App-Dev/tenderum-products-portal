@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Image, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Image, Stack, Text, VStack, List, ListItem } from "@chakra-ui/react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -18,16 +18,22 @@ const Index = () => {
         <Heading as="h2" size="xl" mb={6}>Features</Heading>
         <Stack direction={{ base: "column", md: "row" }} spacing={10}>
           <Box flex="1">
-            <Heading as="h3" size="lg">Feature 1</Heading>
-            <Text mt={2}>Description of feature 1.</Text>
+            <Heading as="h3" size="lg">Tenderisation Timer</Heading>
+            <Text mt={2}>Optimize your cooking with our state-of-the-art Tenderisation Timer. Perfect for achieving the ideal texture in every dish.</Text>
+            <List spacing={3} mt={4}>
+              <ListItem><Text as="span" fontWeight="bold">Accuracy:</Text> High precision timing</ListItem>
+              <ListItem><Text as="span" fontWeight="bold">User Friendly:</Text> Easy-to-use interface</ListItem>
+              <ListItem><Text as="span" fontWeight="bold">Durability:</Text> Built to last</ListItem>
+            </List>
           </Box>
           <Box flex="1">
-            <Heading as="h3" size="lg">Feature 2</Heading>
-            <Text mt={2}>Description of feature 2.</Text>
-          </Box>
-          <Box flex="1">
-            <Heading as="h3" size="lg">Feature 3</Heading>
-            <Text mt={2}>Description of feature 3.</Text>
+            <Heading as="h3" size="lg">Game Fridge Kits</Heading>
+            <Text mt={2}>Transform your refrigerator into a gaming hub with our innovative Game Fridge Kits.</Text>
+            <List spacing={3} mt={4}>
+              <ListItem><Text as="span" fontWeight="bold">Innovative:</Text> First of its kind</ListItem>
+              <ListItem><Text as="span" fontWeight="bold">Fun:</Text> Enhances your kitchen experience</ListItem>
+              <ListItem><Text as="span" fontWeight="bold">Customizable:</Text> Various themes and games available</ListItem>
+            </List>
           </Box>
         </Stack>
       </Box>
