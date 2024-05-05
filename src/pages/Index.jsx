@@ -10,7 +10,7 @@ const Index = () => {
             <Heading as="h1" size="2xl" fontWeight="bold">Tenderum Products</Heading>
             <Text fontSize="xl" color="gray.600">Innovative solutions designed for the future of technology.</Text>
           </VStack>
-          <Image src="https://via.placeholder.com/400" borderRadius="lg" boxShadow="xl" />
+          <Image src="https://www.jaktbutiken.se/bilder/tenderum_moringstimer_914.jpg" borderRadius="lg" boxShadow="xl" width={{ base: "100%", md: "50%" }} />
         </Flex>
       </Box>
 
