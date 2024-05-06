@@ -15,7 +15,7 @@ const Index = () => {
       </Box>
 
       <Box as="section" py={10} px={8} bg="gray.50">
-        <Heading as="h2" size="xl" mb={6}>Funktioner</Heading>
+        <Heading as="h2" size="xl" mb={6}>Produkter</Heading>
         <Stack direction={{ base: "column", md: "row" }} spacing={10}>
           <Box flex="1">
             <Heading as="h3" size="lg">Mörningstimer</Heading>
