@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Image, Stack, Text, VStack, List, ListItem } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, Image, Stack, Text, VStack, List, ListItem, Link } from "@chakra-ui/react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Index = () => {
@@ -77,6 +77,18 @@ const Index = () => {
           </Box>
           <Image src="https://via.placeholder.com/200" borderRadius="lg" boxShadow="xl" />
         </Flex>
+      </Box>
+
+      <Box as="footer" bg="gray.800" color="white" py={10} mt={10}>
+        <Container maxW="container.xl">
+          <Flex direction={{ base: "column", md: "row" }} justify="space-between" align="center">
+            <Text fontSize="sm">© 2023 Tenderum Produkter. All rights reserved.</Text>
+            <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+              <Link href="/privacy-policy" color="gray.300" _hover={{ color: "gray.100" }}>Privacy Policy</Link>
+              <Link href="/terms-of-service" color="gray.300" _hover={{ color: "gray.100" }}>Terms of Service</Link>
+            </Stack>
+          </Flex>
+        </Container>
       </Box>
     </Container>
   );
