@@ -60,11 +60,20 @@ const Index = () => {
 
       <Box as="section" py={10} px={8}>
         <Heading as="h2" size="xl" mb={6}>Kontakta Oss</Heading>
-        <Flex direction={{ base: "column", md: "row" }} spacing={4}>
+        <Flex direction={{ base: "column", md: "row" }} spacing={6} p={{ base: 4, md: 8 }}>
           <Box flex="1" as="address">
-            <Text><FaMapMarkerAlt /> Teknikgatan 1234, Innovationsstaden</Text>
-            <Text><FaPhone /> +123 456 7890</Text>
-            <Text><FaEnvelope /> kontakt@tenderum.com</Text>
+            <Flex alignItems="center">
+              <FaMapMarkerAlt />
+              <Text ml={2}>Teknikgatan 1234, Innovationsstaden</Text>
+            </Flex>
+            <Flex alignItems="center">
+              <FaPhone />
+              <Text ml={2}>+123 456 7890</Text>
+            </Flex>
+            <Flex alignItems="center">
+              <FaEnvelope />
+              <Text ml={2}>kontakt@tenderum.com</Text>
+            </Flex>
           </Box>
           <Image src="https://via.placeholder.com/200" borderRadius="lg" boxShadow="xl" />
         </Flex>
