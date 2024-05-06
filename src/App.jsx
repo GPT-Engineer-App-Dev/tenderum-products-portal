@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Index from "./pages/Index.jsx";
-import { Flex, Box, Link, IconButton } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Flex, Box, Link } from "@chakra-ui/react";
 
 function App() {
   const [display, changeDisplay] = React.useState('none');
@@ -27,14 +26,7 @@ function App() {
           <Link p="2" href="#produkter" fontWeight="bold">Products</Link>
           <Link p="2" href="#kontakta-oss" fontWeight="bold">Contact</Link>
         </Flex>
-        <IconButton
-          aria-label="Open Menu"
-          size="lg"
-          mr="2"
-          icon={<HamburgerIcon />}
-          display={['flex', 'flex', 'none', 'none']}
-          onClick={() => changeDisplay('flex')}
-        />
+        <Box as="button" display={['flex', 'flex', 'none', 'none']} onClick={() => changeDisplay('flex')} p="2" fontSize="lg">Menu</Box>
         <Flex
           w="100vw"
           bgColor="gray.50"
@@ -48,14 +40,7 @@ function App() {
           display={display}
         >
           <Flex justify="flex-end">
-            <IconButton
-              mt={2}
-              mr={2}
-              aria-label="Close Menu"
-              size="lg"
-              icon={<CloseIcon />}
-              onClick={() => changeDisplay('none')}
-            />
+            <Box as="button" mt={2} mr={2} onClick={() => changeDisplay('none')} p="2" fontSize="lg">Close</Box>
           </Flex>
           <Flex flexDir="column" align="center">
             <Link p="4" href="/" onClick={() => changeDisplay('none')}>Home</Link>
