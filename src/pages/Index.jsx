@@ -79,8 +79,8 @@ const Index = () => {
         </Flex>
       </Box>
 
-      <Box as="footer" bg="gray.800" color="white" py={10} mt={10} w="100vw" maxW="100%">
-        <Container maxW="container.xl" px={0}>
+      <Box as="footer" bg="gray.800" color="white" py={10} mt={10} w="100vw">
+        <Container maxW="100%" px={0}>
           <Flex direction={{ base: "column", md: "row" }} justify="space-between" align="center">
             <Text fontSize="sm">© 2023 Tenderum Produkter. All rights reserved.</Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
